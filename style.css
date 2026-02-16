@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: white;
+  text-align: center;
+  padding-bottom: 60px;
+  /* prevent footer overlap */
+}
+
+/* ---------- HEADER ---------- */
+header {
+  padding: 40px 20px;
+}
+
+.logo {
+  width: 80px;
+}
+
+/* ---------- APP SECTION ---------- */
+.apps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  padding: 30px;
+}
+
+.app-card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.app-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.app-card img {
+  width: 100px;
+  border-radius: 20px;
+}
+
+.app-card h2 {
+  margin: 10px 0;
+}
+
+.app-card p {
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+.app-card a {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 20px;
+  background: #22c55e;
+  color: black;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  opacity: 0.6;
+  background: #0f172a;
+  font-size: 14px;
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 600px) {
+  header {
+    padding: 30px 15px;
+  }
+  
+  .logo {
+    width: 60px;
+  }
+  
+  .apps {
+    padding: 15px;
+  }
+  
+  .app-card {
+    padding: 16px;
+  }
+  
+  footer {
+    font-size: 12px;
+  }
+}
+
+/* ---------- LARGE SCREENS ---------- */
+@media (min-width: 1024px) {
+  .apps {
+    max-width: 1100px;
+    margin: auto;
+  }
+}
