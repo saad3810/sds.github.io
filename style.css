@@ -18,8 +18,17 @@ header {
   padding: 40px 20px;
 }
 
+header h2 {
+  margin: 10px 0 5px; /* spacing around your name */
+  font-size: 18px;
+  color: #22c55e; /* optional accent color */
+  font-weight: normal;
+}
+
+
 .logo {
   width: 80px;
+  height: 80px;
   border-radius: 50%;
 }
 
