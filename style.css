@@ -20,7 +20,9 @@ header {
 
 .logo {
   width: 80px;
+  border-radius: 50%;
 }
+
 
 /* ---------- APP SECTION ---------- */
 .apps {
